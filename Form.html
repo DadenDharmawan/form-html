@@ -1,0 +1,72 @@
+<!DOCTYPE html
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form Pendaftaran</title>
+        <style type="text/css">
+            .container {
+                width: 35%;
+                margin: auto;
+                background: whitesmoke;
+            }
+            .tulisan {
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                padding-top: 50px;
+            }
+            table {
+                margin: auto;
+            }
+            .table td {
+                padding-bottom: 20px;
+            }
+            .input {
+                border-radius: 5px;
+            }
+
+        </style>
+    </head>
+    <body style="background-color: cyan;">
+        <div class="container">
+            <h1 class="tulisan" style="color: cyan;">REGISTRATION FORM</h1>
+            <form action="action">
+                <table class="table">
+                    <tr>
+                        <td><label for="name">Name</label></td>
+                        <td><input type="text" class="input"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="date_of_birth">Date of birth</label></td>
+                        <td><input type="date" class="input"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender</label></td>
+                        <td><input type="radio" class="input" name="gender" id="laki-laki">Laki-laki</td>
+                        <td><input type="radio" class="input" name="gender" id="perempuan">Perempuan</td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Address</label></td>
+                        <td><input type="text" class="input" name="address" id="address"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="email" class="input" id="email" placeholder="abc123@email.com" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td><input type="password" class="input" id="password" autocomplete="off" placeholder="8-10 character" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Confirm Password</label></td>
+                        <td><input type="password" class="input" id="password" autocomplete="off" required></td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit" class="input">Submit</button></td>
+                    </tr>
+                </table>  
+                
+            </form>
+        </div>
+    </body>
+</html>
